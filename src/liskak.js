@@ -243,7 +243,7 @@ var liskak = function(_config, _options) {
 		'ForgeDetail': {
 			'path': '/api/delegates/get',
 			'method': 'GET',
-			'querystring': [ "username" ] ]
+			'querystring': [ "username"  ]
 		}
 
 	};
