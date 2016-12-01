@@ -643,6 +643,9 @@ if (options.info || options.listVotes || options.checkVotes || options.commitVot
 			if (options.isForging) {
 				l.node("forgeStatus").then(isForging,logger.error);
 			}
+			if (options.forgeDetail) {
+				l.node("forgeDetail").then(defaultDisplay,logger.error);
+			}
 			if (options.enableForging) {
 				l.node("forgeEnable").then(defaultDisplay,logger.error);
 			}
@@ -715,9 +718,6 @@ if (options.status) {
 }
 if (options.balance) {
 	l.node("balance").then(defaultDisplay);
-}
-if (options.ForgeDetail) {
-	l.node("ForgeDetail").then(defaultDisplay);
 }
 
 /*
