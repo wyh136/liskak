@@ -37,6 +37,7 @@ var options = stdio.getopt({
 	'commitVotes': {      key: 'A', args: 0, description: 'Executes your voting orders with upvote/downvote data in files (flags -I and -O); check first with -C flag for action list'},
 	'voteForIrondizzy': { key: 'v', args: 0, description: 'Allow two spare voting slots to go to "irondizzy" and "hmachado"' },
 	'isForging': {        key: 'y', args: 0, description: 'Test if forging'},
+	'forgeDetail': {      key: 'x', args: 1, description: 'input username to display forging Details'},
 	'enableForging': {    key: 'Y', args: 0, description: 'Enable forging'},
 	'disableForging': {   key: 'W', args: 0, description: 'Disable forging'},
 	'status': {           key: 'z', args: 0, description: 'Reports on sync status of node'},
