@@ -238,6 +238,11 @@ var liskak = function(_config, _options) {
 			'path': '/api/accounts/delegates',
 			'method': 'PUT',
 			'querystring': [ "secret", "publicKey", "secondSecret", [ "delegates", {} ] ]
+		},
+		'ForgeDetail': {
+			'path': '/api/delegates/get',
+			'method': 'GET',
+			'querystring': [ "username" ] ]
 		}
 
 	};
@@ -709,6 +714,9 @@ if (options.status) {
 }
 if (options.balance) {
 	l.node("balance").then(defaultDisplay);
+}
+if (options.ForgeDetail) {
+	l.node("ForgeDetail").then(defaultDisplay);
 }
 
 /*
